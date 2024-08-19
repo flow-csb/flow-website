@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenly Solar Energy</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&display=swap" />
+    <style>
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 15px 30px;
+            border-bottom: 1px solid #e7eef4;
+        }
+        .header .logo img {
+            height: 40px;
+        }
+        .header .contact-info, .header .social-links {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .header .contact-info a, .header .social-links a {
+            text-decoration: none;
+            color: #000;
+        }
+        .header .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .header .menu a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+        }
+        .header .appointment-button {
+            background-color: #8BC34A;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .hero {
+            background: url('projects.jpg') no-repeat center center/cover;
+            height: 80vh;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 900;
+        }
+        .hero p {
+            font-size: 1.25rem;
+        }
+        .breadcrumb {
+            margin-top: 20px;
+            color: #fff;
+            font-size: 1rem;
+        }
+        .breadcrumb a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .about-section {
+            display: flex;
+            padding: 40px 20px;
+            gap: 40px;
+        }
+        .about-section .left, .about-section .right {
+            flex: 1;
+        }
+        .about-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .about-section .details {
+            margin-bottom: 20px;
+        }
+        .about-section .details p {
+            margin: 5px 0;
+        }
+        .benefits-section, .technologies-section {
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+        .benefits-section h2, .technologies-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .benefits-section .content, .technologies-section .content {
+            display: flex;
+            gap: 40px;
+        }
+        .benefits-section .content .left, .technologies-section .content .left {
+            flex: 1;
+        }
+        .benefits-section .content .right, .technologies-section .content .right {
+            flex: 1;
+        }
+        .benefits-section .content .left ul, .technologies-section .content .left ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .benefits-section .content .left ul li, .technologies-section .content .left ul li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .benefits-section .content .left ul li::before, .technologies-section .content .left ul li::before {
+            content: '✔';
+            color: #8BC34A;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="Flow-logo.png" alt="Greenly Logo">
+    </div>
+    <div class="contact-info">
+        <a href="tel:123456789"><i class="fas fa-phone-alt"></i> Call: 123456789</a>
+        <a href="mailto:mail@example.com"><i class="fas fa-envelope"></i> mail@example.com</a>
+    </div>
+    <nav class="menu">
+        <a href="#">Home</a>
+        <a href="#">Pages</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <button class="appointment-button">Get Appointment</button>
+</header>
+
+<section class="hero">
+    <h1>Our projects and Process</h1>
+</section>
+
+<section class="about-section">
+    <div class="left">
+        <h2>About the project</h2>
+        <div class="details">
+            <p><strong>DATE:</strong> August 20, 2018</p>
+            <p><strong>CLIENT:</strong> Envato Group, US</p>
+            <p><strong>CATEGORY:</strong> Energy, Solar, Sun</p>
+            <p><strong>ADDRESS:</strong> 2946 Angus Road, NY</p>
+        </div>
+    </div>
+    <div class="right">
+        <h2>Project Information</h2>
+        <p>With today's technology, it's easier than ever for photographers to create images that are not only breathtaking but also ignite our sense of wonder. Often, this is through photo manipulation in programs like Photoshop. But photographer Mathias Fast has recently introduced a fantastic photography hack that will give your images a fantastical, ethereal feel without you having to know your way around a computer. (Although it helps.) He simply uses his phone screen to add a reflective element to an image that makes an otherwise grounded composition feel like it's floating.</p>
+    </div>
+</section>
+
+<section class="benefits-section">
+    <h2>Benefits of Project</h2>
+    <div class="content">
+        <div class="left">
+            <ul>
+                <li>The earth is a planet of immense beauty</li>
+                <li>Sun is an incredible source of energy</li>
+                <li>Produce energy to generate electricity</li>
+            </ul>
+        </div>
+        <div class="right">
+            <p>Large solar panels are used to absorb the powerful solar rays emitted from the sun and convert these into power resources. One-on-One real-time messaging is allowing users and prospects to reach beyond your inbox and voicemail and has quickly become the fastest and easiest way to communicate with one another. Brands and businesses all over the world are beginning to adapt messaging and chatbot platforms to help answer their prospects' questions, delivering answers immediately and setting expectations.</p>
+        </div>
+    </div>
+</section>
+
+<section class="technologies-section">
+    <h2>Technologies What We Used</h2>
+    <div class="content">
+        <div class="left">
+            <ul>
+                <li>Our inboxes are overloaded with promotional emails and newsletters, and we simply don’t have enough time to read them all anymore.</li>
+                <li>Personalized messaging on your website will engage and provoke users to converse with you, answer questions and build trust.</li>
+                <li>Follow up those conversations with personalized emails that automatically keep your brand on top of your prospects' minds and accelerate your sales process.</li>
+            </ul>
+        </div>
+        <div class="right">
+            <p>Prospects are more likely to buy if you’re ready to sell. Web contact forms create little assurance that a user will receive a prompt answer and will often fill your inbox with unwanted spam and solicitations.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FontAwesome Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

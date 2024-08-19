@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenly Solar Energy</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            position: relative;
+            width: 100%;
+            height: 90vh; /* Increased height */
+            background: url('projects.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .nav a {
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content {
+            text-align: center;
+        }
+        .content h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        .appointment-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .breadcrumb {
+            margin-top: 20px;
+            color: white;
+        }
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            height: 50vh; /* Decreased height */
+        }
+        .services {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .services h2 {
+            margin-top: 0;
+        }
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+        .services li {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .services li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+        .image-section {
+            flex: 2;
+            background: url('process and tech.jpg') no-repeat center center/cover;
+        }
+        .main-content {
+            display: flex;
+            padding: 50px 20px;
+            box-sizing: border-box;
+        }
+        .sidebar {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .need-help, .download {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .need-help h3, .download h3 {
+            margin-top: 0;
+        }
+        .download a {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .download a.download-pdf {
+            background-color: #4CAF50;
+        }
+        .download a.download-txt {
+            background-color: #333;
+        }
+        .services-container {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            padding: 50px 20px;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            margin: 20px;
+        }
+        .services-section {
+            display: flex;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .services-section:last-child {
+            border-bottom: none;
+        }
+        .services-section .image {
+            flex: 1;
+            background: url('image.png') no-repeat center center/cover;
+            height: 300px;
+            margin-right: 20px;
+        }
+        .services-section .text {
+            flex: 1;
+        }
+        .services-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .services-section p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #666;
+        }
+        .services-section ul {
+            list-style: none;
+            padding: 0;
+            color: #666;
+        }
+        .services-section li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .services-section li::before {
+            content: '✔';
+            color: #4CAF50;
+            margin-right: 10px;
+        }
+        .service-card img {
+            width: 30px; /* Decreased size */
+            height: 30px; /* Decreased size */
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="Flow-logo.png" alt="Greenly Logo">
+        </div>
+        <div class="nav">
+            <a href="#">HOME</a>
+            <a href="#">PAGES</a>
+            <a href="#">SERVICES</a>
+            <a href="#">PROJECTS</a>
+            <a href="#">CONTACT US</a>
+        </div>
+        <div class="content">
+            <h1>Process and Technology</h1>
+            <div class="breadcrumb"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="services">
+            <h2>SERVICES</h2>
+            <ul>
+                <li><a href="#">Technical Services</a></li>
+                <li><a href="#">Energy panels</a></li>
+                <li><a href="#">Wind Generators</a></li>
+                <li><a href="#">Solar As A Service</a></li>
+                <li><a href="#">Solar PV Systems</a></li>
+            </ul>
+        </div>
+        <div class="image-section"></div>
+    </div>
+    <div class="main-content">
+        <div class="sidebar">
+            <div class="need-help">
+                <h3>NEED HELP</h3>
+                <p>Our Client care managers are on call 24/7 to answer your questions representative or submit a business inquiry online.</p>
+                <p><strong>123 456 789</strong></p>
+            </div>
+            <div class="download">
+                <h3>DOWNLOAD</h3>
+                <a href="#" class="download-pdf">Download.pdf</a>
+                <a href="#" class="download-txt">Download.txt</a>
+            </div>
+        </div>
+        <div class="services-container">
+            <div class="services-section">
+                <div class="image"></div>
+                <div class="text">
+                    <h2>Services We Provide</h2>
+                    <p>Consider powering your business’ office, commercial building or a manufacturing plant as an investment in the future. The immediate return though will be a huge cut on those monthly energy bills that you receive they become self sufficient in power usage.</p>
+                    <div class="services-cards">
+                        <div class="service-card">
+                            <img src="icon1.png" alt="Easy Installation">
+                            <h3>Easy Installation</h3>
+                            <p>Wind is a source of energy which is non-polluting and renewable, wind turbines create power without using fossil fuels.</p>
+                            <a href="#">READ MORE</a>
+                        </div>
+                        <div class="service-card">
+                            <img src="icon2.png" alt="Long Time to Use">
+                            <h3>Long Time to Use</h3>
+                            <p>Source of energy which is non-polluting and renewable, wind turbines create power without using fossil fuels.</p>
+                            <a href="#">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-section">
+                <div class="image"></div>
+                <div class="text">
+                    <h2>Services We Offer</h2>
+                    <p>We specialize in consulting in choosing and actually installing doing the of both full-cycle batteries.</p>
+                    <ul>
+                        <li>Satisfaction Value For Money Solution</li>
+                        <li>Vertical Axis Wind Turbine</li>
+                        <li>Horizontal Axis Wind Turbine</li>
+                        <li>Wind Mills</li>
+                        <li>Capicola ground round venison</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
